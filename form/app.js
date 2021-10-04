@@ -2,7 +2,7 @@
 const express = require("express");
 const registerHelper = require("hbs");
 const app = express();
-const port = 3000;
+const port = process.env.PORT || 3000;
 const hostname = "127.0.0.1";
 const path = require("path");
 require("./db/conn");
