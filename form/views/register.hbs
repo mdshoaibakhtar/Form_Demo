@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+
+    <style>
+        h2{
+            text-align: center;
+        }
+
+        .info{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 1.4rem;
+        }
+        .info input{
+            width: 500px;
+        }
+    </style>
+</head>
+<body>
+    <h2>Enter Your Information</h2>
+    <div class="info">
+        <form action="/register" method="POST">
+            <input type="name" name="name" id="name" placeholder="Enter Your Name"><br>
+            <input type="text" name="address" id="address" placeholder="Enter Your Address"><br>
+            <input type="number" name="mobile" id="mobile" placeholder="Enter Your Mobile No."><br>
+            <input type="email" name="mail" id="mail" placeholder="Enter Your E-mail"><br>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
+
